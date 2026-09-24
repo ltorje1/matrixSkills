@@ -7,69 +7,69 @@
   },
   "plugins": [
     {
-      "name": "operator",
+      "name": "matrix-operator",
       "description": "Your operator on the other side: Morpheus flavor lines and the \"Uploading <art>.skill\" banner whenever a martial art is loaded.",
-      "source": "./plugins/operator",
+      "source": "./plugins/matrix-operator",
       "category": "productivity"
     },
     {
-      "name": "kung-fu",
+      "name": "matrix-kung-fu",
       "description": "I know kung fu. Root-cause debugging kata: reproduce, isolate, hypothesize, fix, verify.",
-      "source": "./plugins/kung-fu",
+      "source": "./plugins/matrix-kung-fu",
       "category": "productivity"
     },
     {
-      "name": "aikido",
+      "name": "matrix-aikido",
       "description": "Redirect, don't resist. Defuse hostile review feedback and immovable constraints with the smallest redirecting change.",
-      "source": "./plugins/aikido",
+      "source": "./plugins/matrix-aikido",
       "category": "productivity"
     },
     {
-      "name": "jiu-jitsu",
+      "name": "matrix-jiu-jitsu",
       "description": "Position before submission. Pin legacy behavior with characterization tests, then refactor.",
-      "source": "./plugins/jiu-jitsu",
+      "source": "./plugins/matrix-jiu-jitsu",
       "category": "productivity"
     },
     {
-      "name": "wing-chun",
+      "name": "matrix-wing-chun",
       "description": "Own the centerline. Cut code to the shortest path: YAGNI, fewer abstractions, less indirection.",
-      "source": "./plugins/wing-chun",
+      "source": "./plugins/matrix-wing-chun",
       "category": "productivity"
     },
     {
-      "name": "krav-maga",
+      "name": "matrix-krav-maga",
       "description": "No rules, only threats. Fast, pragmatic security sweep of a diff.",
-      "source": "./plugins/krav-maga",
+      "source": "./plugins/matrix-krav-maga",
       "category": "productivity"
     },
     {
-      "name": "tai-chi",
+      "name": "matrix-tai-chi",
       "description": "Stillness in the storm. Calm incident response: stabilize, communicate, diagnose, fix, learn.",
-      "source": "./plugins/tai-chi",
+      "source": "./plugins/matrix-tai-chi",
       "category": "productivity"
     },
     {
-      "name": "muay-thai",
+      "name": "matrix-muay-thai",
       "description": "The art of eight limbs. Eight-angle code review of a diff or PR.",
-      "source": "./plugins/muay-thai",
+      "source": "./plugins/matrix-muay-thai",
       "category": "productivity"
     },
     {
-      "name": "drunken-boxing",
+      "name": "matrix-drunken-boxing",
       "description": "Unpredictable by design. Generate chaotic edge cases and fuzz inputs that break code before users do.",
-      "source": "./plugins/drunken-boxing",
+      "source": "./plugins/matrix-drunken-boxing",
       "category": "productivity"
     },
     {
-      "name": "judo",
+      "name": "matrix-judo",
       "description": "Maximum efficiency, minimum effort. Reuse what exists before writing anything new.",
-      "source": "./plugins/judo",
+      "source": "./plugins/matrix-judo",
       "category": "productivity"
     },
     {
-      "name": "kendo",
+      "name": "matrix-kendo",
       "description": "One precise cut. Surgical, single-purpose edits with no collateral changes.",
-      "source": "./plugins/kendo",
+      "source": "./plugins/matrix-kendo",
       "category": "productivity"
     }
   ]

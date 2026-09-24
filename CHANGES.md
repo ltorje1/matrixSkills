@@ -1,5 +1,10 @@
 # Session ledger
 
+## 2026-09-24 · claude · b5e13e6
+REQ: rename — matrix- prefix on all plugin and skill names
+Changed: plugins/* → plugins/matrix-*, skill names, marketplace.json, upload-banner.sh ARTS, session-start.sh rule, tests, README, CLAUDE.md
+Watch: Install ids are now matrix-<art>@the-construct; the banner still shows the bare art ("I know aikido."). Unprefixed skill names get no banner (on purpose). The design spec keeps the old names as a historical record.
+
 ## 2026-09-24 · claude · 6467344
 REQ: the-construct v1 — marketplace, operator plugin, 10 martial-arts skills
 Changed: .claude-plugin/marketplace.json, plugins/{operator,kung-fu,aikido,jiu-jitsu,wing-chun,krav-maga,tai-chi,muay-thai,drunken-boxing,judo,kendo}, tests/, README.md
