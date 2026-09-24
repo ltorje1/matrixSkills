@@ -34,3 +34,23 @@ This repo is a Claude Code plugin marketplace named `the-construct`. The design 
 bash tests/hooks.test.sh
 claude plugin validate .
 ```
+
+## Evals (does an art trigger, and does it help?)
+
+Suites live in `plugins/matrix-<art>/evals/<case>/`: `case.yaml` (points at `scaffold.sh`), `prompt.md`, `graders/*.md`. Each art has:
+- one `main` case: a realistic task whose graders check the behavior the kata requires;
+- one `near-miss` case: a nearby prompt where the skill must not fire.
+
+Every main case also has `skill-fired`, `motto-shown` and `flavor-discipline` graders.
+
+Run it with the subscription login; the shell's API key has no credit:
+
+```
+(unset ANTHROPIC_API_KEY; claude plugin eval plugins/matrix-<art> --scaffold \
+  --allow-tools Bash Write Edit --judge-model sonnet -j 2)
+```
+
+- **Cheap grader debugging:** add `--ablation none --runs 1`.
+- **Usage limits:** a run that hits the usage limit reports failing graders ("judge call failed"). Check each run's `error` and the grader explanations before trusting a score.
+- **No git in the sandbox:** `git` doesn't run inside the eval sandbox (xcode-select). The scaffold runs outside it, so it can use git, but Claude has to read the files directly.
+- **Rubrics:** write `llm` rubrics with explicit PASS/FAIL conditions, and say what counts as a PASS when the thing is absent. A vague flavor rubric failed a response that had no flavor at all.

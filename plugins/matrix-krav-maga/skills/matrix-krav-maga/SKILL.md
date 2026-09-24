@@ -1,6 +1,6 @@
 ---
 name: matrix-krav-maga
-description: Use when a diff, PR, or feature touches user input, authentication, authorization, secrets, file paths, queries, or external calls - fast pragmatic security sweep before merge.
+description: Use when asked to check changes before a merge, deploy, or release, or when code handles user input, authentication, authorization, secrets, SQL or shell commands, file paths, or external calls - fast pragmatic security sweep with ranked findings.
 ---
 
 # Krav Maga — neutralize the threat

@@ -1,5 +1,10 @@
 # Session ledger
 
+## 2026-09-25 · claude · 54147c6
+REQ: eval pilot — kendo, jiu-jitsu, krav-maga (main + near-miss cases)
+Changed: plugins/matrix-{kendo,jiu-jitsu,krav-maga}/evals/, krav-maga description, .gitignore, CLAUDE.md
+Watch: Pilot Δ (runs=3): jiu-jitsu +0.25 (pins negative-qty quirk, baseline never does); kendo +0.22 (only the noticed-but-untouched list; baseline also avoids drive-bys; fired 2/3); krav-maga ≈+0.13 after dropping a timed-out baseline run (reported +0.42; baseline finds the same bugs, gain is severity ranking). All near-misses 0 false fires. Humor not yet rated by humans.
+
 ## 2026-09-24 · claude · b5e13e6
 REQ: rename — matrix- prefix on all plugin and skill names
 Changed: plugins/* → plugins/matrix-*, skill names, marketplace.json, upload-banner.sh ARTS, session-start.sh rule, tests, README, CLAUDE.md
