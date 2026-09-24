@@ -1,0 +1,76 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "the-construct",
+  "description": "The Construct: martial-arts skills for Claude Code. Install one and Claude knows kung fu.",
+  "owner": {
+    "name": "Lucian Torje"
+  },
+  "plugins": [
+    {
+      "name": "operator",
+      "description": "Your operator on the other side: Morpheus flavor lines and the \"Uploading <art>.skill\" banner whenever a martial art is loaded.",
+      "source": "./plugins/operator",
+      "category": "productivity"
+    },
+    {
+      "name": "kung-fu",
+      "description": "I know kung fu. Root-cause debugging kata: reproduce, isolate, hypothesize, fix, verify.",
+      "source": "./plugins/kung-fu",
+      "category": "productivity"
+    },
+    {
+      "name": "aikido",
+      "description": "Redirect, don't resist. Defuse hostile review feedback and immovable constraints with the smallest redirecting change.",
+      "source": "./plugins/aikido",
+      "category": "productivity"
+    },
+    {
+      "name": "jiu-jitsu",
+      "description": "Position before submission. Pin legacy behavior with characterization tests, then refactor.",
+      "source": "./plugins/jiu-jitsu",
+      "category": "productivity"
+    },
+    {
+      "name": "wing-chun",
+      "description": "Own the centerline. Cut code to the shortest path: YAGNI, fewer abstractions, less indirection.",
+      "source": "./plugins/wing-chun",
+      "category": "productivity"
+    },
+    {
+      "name": "krav-maga",
+      "description": "No rules, only threats. Fast, pragmatic security sweep of a diff.",
+      "source": "./plugins/krav-maga",
+      "category": "productivity"
+    },
+    {
+      "name": "tai-chi",
+      "description": "Stillness in the storm. Calm incident response: stabilize, communicate, diagnose, fix, learn.",
+      "source": "./plugins/tai-chi",
+      "category": "productivity"
+    },
+    {
+      "name": "muay-thai",
+      "description": "The art of eight limbs. Eight-angle code review of a diff or PR.",
+      "source": "./plugins/muay-thai",
+      "category": "productivity"
+    },
+    {
+      "name": "drunken-boxing",
+      "description": "Unpredictable by design. Generate chaotic edge cases and fuzz inputs that break code before users do.",
+      "source": "./plugins/drunken-boxing",
+      "category": "productivity"
+    },
+    {
+      "name": "judo",
+      "description": "Maximum efficiency, minimum effort. Reuse what exists before writing anything new.",
+      "source": "./plugins/judo",
+      "category": "productivity"
+    },
+    {
+      "name": "kendo",
+      "description": "One precise cut. Surgical, single-purpose edits with no collateral changes.",
+      "source": "./plugins/kendo",
+      "category": "productivity"
+    }
+  ]
+}

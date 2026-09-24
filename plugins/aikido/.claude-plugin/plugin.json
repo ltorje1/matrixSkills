@@ -1,0 +1,14 @@
+{
+  "name": "aikido",
+  "description": "Redirect, don't resist. Defuse hostile review feedback and immovable constraints with the smallest redirecting change.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Lucian Torje"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "matrix",
+    "martial-arts",
+    "the-construct"
+  ]
+}

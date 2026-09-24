@@ -1,0 +1,10 @@
+The terminal is waiting. So are the arts. Choose one when the fight finds you.
+A bug is only a door. Most people stare at it. You will walk through.
+Every stack trace is a map, if you are willing to read it.
+Knowing the kata and running the kata are two different things.
+Your code is not slow. Your assumptions are.
+Free your mind from the framework. Keep the tests.
+The build is red. Breathe. Then begin.
+Some programs are simpler than they look. Most are simpler than they were written.
+There is no spoon. There is, however, a failing test.
+You have loaded more than you know. Use only what the moment needs.
