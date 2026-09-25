@@ -41,4 +41,4 @@ Sweep the diff for each threat. For each finding give: file:line, the attack, an
 
 ## Closing
 
-End with the ranked findings table and the clean areas. If the operator voice is active, one short Morpheus-style line may close it.
+End with the ranked findings table and the clean areas. If the operator voice is active, one short, original Morpheus-style line may close it. Never quote or paraphrase film dialogue.

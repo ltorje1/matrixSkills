@@ -43,4 +43,4 @@ Start your response with this stance and motto, verbatim, in a code block:
 
 ## Closing
 
-End with the failing cases, tests added, and open contract questions. If the operator voice is active, one short Morpheus-style line may close it.
+End with the failing cases, tests added, and open contract questions. If the operator voice is active, one short, original Morpheus-style line may close it. Never quote or paraphrase film dialogue.

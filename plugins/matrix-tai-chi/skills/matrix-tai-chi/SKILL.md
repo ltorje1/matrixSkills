@@ -39,4 +39,4 @@ Start your response with this stance and motto, verbatim, in a code block:
 
 ## Closing
 
-End with current status, the timeline so far, and the next step. If the operator voice is active, one short Morpheus-style line may close it.
+End with current status, the timeline so far, and the next step. If the operator voice is active, one short, original Morpheus-style line may close it. Never quote or paraphrase film dialogue.

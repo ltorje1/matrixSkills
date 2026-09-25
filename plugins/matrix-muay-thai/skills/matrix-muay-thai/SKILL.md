@@ -42,4 +42,4 @@ Read the full diff and enough surrounding code to understand it. Then strike fro
 
 ## Closing
 
-End with a verdict (approve / approve with fixes / request changes) and the ranked findings. If the operator voice is active, one short Morpheus-style line may close it.
+End with a verdict (approve / approve with fixes / request changes) and the ranked findings. If the operator voice is active, one short, original Morpheus-style line may close it. Never quote or paraphrase film dialogue.
