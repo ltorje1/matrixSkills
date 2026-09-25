@@ -1,5 +1,10 @@
 # Session ledger
 
+## 2026-09-25 · claude · 0b42f22
+REQ: eval batch B — muay-thai, drunken-boxing, judo (runs=3, no errored runs); all 10 arts now measured
+Changed: CHANGES.md only
+Watch: Δ muay-thai +0.33 (severity labels + verdict 3/3 vs 0/3); drunken-boxing 0, judo 0 (baseline equally good). All 10: mean with 0.98 vs without 0.80; skill fired 29/30, near-miss false fires 0/30. flavor-discipline judge is noisy (fails responses with no body flavor or film quotes) — replace with deterministic checks before trusting it. Eval spend to date ≈ $16.29 list.
+
 ## 2026-09-25 · claude · be94c19
 REQ: eval batch A — kung-fu, aikido, wing-chun, tai-chi (runs=3, no errored runs)
 Changed: CHANGES.md only (suites committed in be94c19)
