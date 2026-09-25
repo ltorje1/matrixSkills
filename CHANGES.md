@@ -1,5 +1,10 @@
 # Session ledger
 
+## 2026-09-25 · claude · be94c19
+REQ: eval batch A — kung-fu, aikido, wing-chun, tai-chi (runs=3, no errored runs)
+Changed: CHANGES.md only (suites committed in be94c19)
+Watch: Δ kung-fu +0.25 (only regression test; baseline also reproduces + finds root cause); aikido 0 and wing-chun 0 (baseline equally good: flavor-only arts); tai-chi +0.67 (baseline also rolls back, but never drafts status update or postmortem). Near-misses 0/12 false fires; skills fired 12/12. Flavor judge failed 3/12 original closers (strict, not film quotes). Batch B (muay-thai, drunken-boxing, judo) not yet run.
+
 ## 2026-09-25 · claude · 54147c6
 REQ: eval pilot — kendo, jiu-jitsu, krav-maga (main + near-miss cases)
 Changed: plugins/matrix-{kendo,jiu-jitsu,krav-maga}/evals/, krav-maga description, .gitignore, CLAUDE.md
