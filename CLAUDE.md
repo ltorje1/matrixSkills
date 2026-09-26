@@ -9,6 +9,27 @@ A Claude Code plugin marketplace named `the-construct`: martial-arts skills them
 - `docs/superpowers/specs/2026-09-24-the-construct-design.md` is the original design. It predates the `matrix-` prefix, so its names are historical.
 - `CHANGES.md` is the session ledger, including every eval scoreboard.
 
+## Workflow (required for every change)
+
+All changes are made in a git worktree on their own branch, never in the main checkout:
+
+```
+git worktree add ../matrixSkills-<topic> -b <type>/<topic>
+```
+
+(or the EnterWorktree tool). Then follow these steps in order:
+
+1. **Investigate.** Read the relevant skills, scripts, evals and `CHANGES.md` (including past eval results) before proposing anything.
+2. **Create an intent file** at `docs/intents/YYYY-MM-DD-<topic>.md`: the goal, why, success criteria, out of scope, and open questions.
+3. **Plan from the intent and look for gaps.** Add a `## Plan` and a `## Gaps` section to the intent file. Check every success criterion against the plan, and check for the usual gaps: the three places the art list lives, tests, evals for affected arts, README and CLAUDE.md. Resolve or record each gap.
+4. **Implement.**
+5. **Review** the diff against the intent file (for example with `/code-review`), and fix what it finds.
+6. **Run the local tests:** `bash tests/hooks.test.sh` and `claude plugin validate .`.
+7. **Commit.** The pre-commit hook re-runs the tests (a failure blocks the commit). When an art's skill or evals are staged, it offers to run their evals. An agent can't answer that prompt, so the hook prints the eval commands instead. **Ask the user in chat before running them**, because evals use their usage limits.
+8. **Create a PR** with `gh pr create`. The body links the intent file and states the eval results, or says that evals were skipped and why.
+
+The hook lives in `.githooks/`. Enable it once per clone (worktrees share the setting) with `git config core.hooksPath .githooks`.
+
 ## Architecture
 
 - `.claude-plugin/marketplace.json` lists `matrix-operator` plus one plugin per art, each with source `./plugins/<name>`. Every plugin and skill name uses the `matrix-` prefix.
