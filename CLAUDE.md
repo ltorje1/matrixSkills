@@ -78,7 +78,8 @@ Evals use the user's credentials. If `ANTHROPIC_API_KEY` is set, it takes preced
 4. Add evals in `plugins/matrix-<art>/evals/`, following an existing art:
    - a `main` case (`case.yaml` pointing at `scaffold.sh`, `prompt.md`, `graders/*.md`) plus the shared `skill-fired`, `motto-shown` and `flavor-discipline` graders;
    - a `near-miss` case whose only grader asserts the skill did not fire (`min: 0`, `max: 0`, `arm: both`).
-5. Run the tests, validate, then run the evals.
+5. Document it for users: a `## matrix-<art>` section in `docs/arts.md` (the tests enforce this), with the measured result once the evals have run, plus a row in the README's arts table.
+6. Run the tests, validate, then run the evals.
 
 ## Constraints
 
