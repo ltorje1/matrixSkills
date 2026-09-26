@@ -1,5 +1,10 @@
 # Session ledger
 
+## 2026-09-26 · claude · 45f6ec5
+REQ: rework matrix-aikido — "find the worry under the attack"
+Changed: plugins/matrix-aikido/skills/matrix-aikido/SKILL.md, plugins/matrix-aikido/evals/hostile-review/graders/{absorbs-wrong-comment,worry-per-comment,no-asyncio}.md
+Watch: Δ 0 → +0.11: absorbing the worry behind the wrong asyncio comment 5/6 with skill (2 runs) vs 0/6 without. worry-per-comment doesn't discriminate (baseline 3/3). no-asyncio must match async code, not the word: the skill writes docstrings pointing to asyncio.to_thread. Runner limit detector must read error fields only (HTTP "429 rate limited" in answers caused a false stop).
+
 ## 2026-09-25 · claude · 0b42f22
 REQ: eval batch B — muay-thai, drunken-boxing, judo (runs=3, no errored runs); all 10 arts now measured
 Changed: CHANGES.md only

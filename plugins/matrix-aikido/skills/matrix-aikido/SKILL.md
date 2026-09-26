@@ -1,6 +1,6 @@
 ---
 name: matrix-aikido
-description: Use when receiving harsh or hostile code review feedback, strong pushback, or a constraint that cannot be changed ("we can't touch X") - to redirect that force into the smallest useful change instead of fighting it.
+description: Use when receiving harsh or hostile code review feedback, strong pushback, or a constraint that cannot be changed ("we can't touch X") - find the real worry behind every comment, even the wrong or petty ones, and absorb it with the smallest change instead of just agreeing or arguing.
 ---
 
 # Aikido — redirect, don't resist
@@ -17,25 +17,28 @@ Start your response with this stance and motto, verbatim, in a code block:
 
 ## Kata
 
-1. **Receive the attack.** Restate each piece of feedback or constraint in neutral, technical terms. Strip tone; keep the claim.
-2. **Find the energy.** For each point, identify the legitimate concern underneath: correctness, maintainability, risk, ownership, time. Even hostile feedback usually carries one.
-3. **Verify, don't obey.** Check the claim against the code. Is it true? Partially true? Based on a misreading? Collect evidence either way.
-4. **Blend.** Choose the smallest change that addresses the real concern. Often it is not what the reviewer literally asked for, but it satisfies what they are worried about.
-5. **Redirect.** Where the claim is wrong, reply with evidence and a concrete alternative, not a counterattack. Where it is right, make the change and say so plainly.
-6. **Draft the reply.** For each point: *agreed + done*, *agreed + different approach (why)*, or *disagree (evidence)*. Calm, short, specific.
+1. **Receive.** Restate each comment or constraint as a neutral technical claim. Strip the tone; keep the claim.
+2. **Verify.** Check each claim against the code and label it **correct**, **partly correct**, or **wrong**, with evidence.
+3. **Find the worry.** For *every* comment, including the wrong and the petty ones, name the outcome the reviewer is afraid of: an outage, a hang, data loss, a security hole, code nobody can follow, being ignored. A wrong demand often guards a real worry. The literal request can be mistaken while the fear behind it is valid.
+4. **Blend.** Remove each worry with the smallest change that does it, even when the literal demand is wrong and you are not doing what was asked. If no code change fits, commit to a concrete follow-up: a test, a metric, an issue.
+5. **Redirect.** Answer each comment in one of three forms:
+   - *agreed + done*;
+   - *not as asked, but this addresses the concern* (and why);
+   - *disagree (evidence) + here is what I did about the worry*.
+6. **Draft the replies.** Calm, short, specific. No sarcasm, no grovelling.
 
 ## Rules
 
-- Never escalate tone. Match heat with precision.
+- No comment gets a bare "no". Every reply names the worry and what happened to it.
 - Never perform agreement you don't have. "You're right" only when verified.
 - Constraints you can't move become design inputs, not grievances.
 
 ## Anti-patterns
 
+- Winning the argument while leaving the worry in place.
+- Implementing a wrong demand literally just to end the conversation.
 - Rewriting everything to appease one comment.
-- Arguing about style when the concern is risk.
-- Silent partial compliance.
 
 ## Closing
 
-End with the list of changes made and the drafted replies. If the operator voice is active, one short, original Morpheus-style line may close it. Never quote or paraphrase film dialogue.
+End with a table (comment → verdict → worry → what changed), then the drafted replies. If the operator voice is active, one short, original Morpheus-style line may close it. Never quote or paraphrase film dialogue.
