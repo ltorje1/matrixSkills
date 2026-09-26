@@ -1,0 +1,14 @@
+{
+  "name": "matrix-krav-maga",
+  "description": "No rules, only threats. Fast, pragmatic security sweep of a diff.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Lucian Torje"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "matrix",
+    "martial-arts",
+    "the-construct"
+  ]
+}

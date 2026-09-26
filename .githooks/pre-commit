@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+# Pre-commit: run the local tests (blocking), then offer evals for arts whose
+# skill or evals are staged. Evals never block the commit.
+set -u
+root=$(git rev-parse --show-toplevel)
+
+if ! out=$(bash "$root/tests/hooks.test.sh" 2>&1); then
+  echo "$out" | grep -E 'FAIL|passed'
+  echo "pre-commit: local tests failed; commit aborted." >&2
+  exit 1
+fi
+echo "pre-commit: $(echo "$out" | tail -1)"
+
+arts=$(git diff --cached --name-only | sed -nE 's#^plugins/(matrix-[^/]+)/(skills|evals)/.*#\1#p' | sort -u)
+[ -n "$arts" ] || exit 0
+echo "pre-commit: changed arts: $(echo $arts)"
+
+eval_cmd() { echo "claude plugin eval $root/plugins/$1 --scaffold --allow-tools Bash Write Edit --judge-model sonnet -j 2"; }
+
+# Without a terminal (e.g. an agent committing) we can't ask; print the commands instead.
+if ! { : </dev/tty; } 2>/dev/null; then
+  echo "pre-commit: evals not run (no terminal). Ask the user before running:"
+  for art in $arts; do echo "  $(eval_cmd "$art")"; done
+  exit 0
+fi
+
+printf 'Run evals for %s now (about $1.25 per art, uses your Claude credentials)? [y/N] ' "$(echo $arts)"
+read -r answer </dev/tty
+case $answer in
+  y|Y)
+    for art in $arts; do $(eval_cmd "$art") --threshold 0 </dev/tty; done ;;
+  *) echo "pre-commit: evals skipped." ;;
+esac
+exit 0

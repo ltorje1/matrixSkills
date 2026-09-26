@@ -1,0 +1,14 @@
+{
+  "name": "matrix-muay-thai",
+  "description": "The art of eight limbs. Eight-angle code review of a diff or PR.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Lucian Torje"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "matrix",
+    "martial-arts",
+    "the-construct"
+  ]
+}

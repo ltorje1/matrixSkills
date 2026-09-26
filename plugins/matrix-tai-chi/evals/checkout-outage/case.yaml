@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: checkout-outage
+context:
+  scaffold_script: scaffold.sh

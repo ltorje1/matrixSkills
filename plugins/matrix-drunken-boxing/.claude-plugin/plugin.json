@@ -1,0 +1,14 @@
+{
+  "name": "matrix-drunken-boxing",
+  "description": "Unpredictable by design. Generate chaotic edge cases and fuzz inputs that break code before users do.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Lucian Torje"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "matrix",
+    "martial-arts",
+    "the-construct"
+  ]
+}
