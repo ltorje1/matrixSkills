@@ -64,6 +64,11 @@ for art in $listed; do
   check "$art: description starts with 'Use when'" grep -q '^description: Use when' "$skill"
 done
 
+# --- user docs ---------------------------------------------------------------
+for art in $listed; do
+  check "$art: documented in docs/arts.md" grep -qx "## $art" "$ROOT/docs/arts.md"
+done
+
 echo "---"
 echo "$pass passed, $fail failed"
 test "$fail" -eq 0
